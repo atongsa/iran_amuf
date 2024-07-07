@@ -4,9 +4,22 @@
 cd /public/home/d0202110815/at42/proj/iran_amuf/v2/p1/admixture
 
 # args
-q_f='/public/home/d0202110815/at42/proj/iran_amuf/v2/p1/admixture/snmf_q/mouflon.dom.f2.'
-pop_f='/public/home/d0202110815/gse/wgs/pops_str/mouflon.dom.f2.ped'
-strata_f='/public/home/d0202110815/at42/proj/iran_amuf/v2/p1/admixture/sp_info/sp.st.strata'
+## 788
+q_f='/public/home/d0202110815/at42/proj/iran_amuf/v2/p1/admixture/snmf_q/788.f2.'
+#pop_f='/public/home/d0202110815/gse/wgs/pops_str/mouflon.dom.f2.ped'
+strata_f='/public/home/d0202110815/at42/proj/iran_amuf/v2/p1/admixture/sp_info/snmf.788.st'
+lv_f='/public/home/d0202110815/at42/proj/iran_amuf/v2/p1/admixture/sp_info/sp.lv'
+
+## amuf
+q_f='/public/home/d0202110815/at42/proj/iran_amuf/v2/p1/admixture/snmf_q/mouflon.f2.'
+#pop_f='/public/home/d0202110815/gse/wgs/pops_str/mouflon.dom.f2.ped'
+strata_f='/public/home/d0202110815/at42/proj/iran_amuf/v2/p1/admixture/sp_info/snmf.amuf.st'
+lv_f='/public/home/d0202110815/at42/proj/iran_amuf/v2/p1/admixture/sp_info/sp.lv'
+
+## mouflon_urial
+q_f='/public/home/d0202110815/at42/proj/iran_amuf/v2/p1/admixture/snmf_q/mouflon.urial.f2.'
+#pop_f='/public/home/d0202110815/gse/wgs/pops_str/mouflon.dom.f2.ped'
+strata_f='/public/home/d0202110815/at42/proj/iran_amuf/v2/p1/admixture/sp_info/snmf.amuf_urial.st'
 lv_f='/public/home/d0202110815/at42/proj/iran_amuf/v2/p1/admixture/sp_info/sp.lv'
 
 # run

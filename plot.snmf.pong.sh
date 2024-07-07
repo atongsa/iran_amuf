@@ -8,7 +8,7 @@ cd /public/home/d0202110815/at42/proj/iran_amuf/v2/p1/admixture/plot_pong
 # sort -k2,2n # K=3/0.433911
 
 ## Q
-for f in {3..10}
+for f in {2..10}
 do
 echo -e K$f"\t"$f"\t"" $q_f"$f".Q"
 done > pong.filemap
@@ -20,8 +20,11 @@ cp $lv_f pong.pop.order
 ## color
 ```r
 library(tidyverse)
+library(scales)
 library(ggsci)
 my_pal <- pal_npg("nrc")(10) # , alpha = 0.7
+#at_col <- hue_pal(c=70, l=70)(2)
+col_n <- c(my_pal, at_col) # num as the k 
 write_lines(my_pal, 'pong.col.tsv')
 ```
 
