@@ -1,0 +1,61 @@
+# philosophy
+- mito skyline
+- y skyline
+
+# run
+- methods
+The demographic dynamics of the 8 population were further investigated by Bayesian Skyline Plots (BSP) [@drummondBayesianCoalescentInference2005] using the
+Bayesian skyline plot model implemented in BEAST 2.0
+[22] following [23]. In brief, the HKY + G + 1 nucleotide
+substitution model was used for the analysis, and each
+Markov Chain Monte Carlo simulation (MCMC) run
+was performed for 2000 million generations that were
+sampled every 2,000 generations. The initial two million
+generations served as burn-in. Convergence of the poste-
+rior estimates of the Ne to the likelihood stationary distri-
+bution was evaluated with TRACER v1.6 (http://tree.bio.
+ed.ac.uk/software/treestat/). Since there is no available
+mutation rate for sheep D-loop, we calibrated the BSPs
+using the molecular rate of evolution (µ) of cattle mtDNA
+D-loop of 6.94 × 10 − 7 substitutions/site/year [s/s/y; 95%
+highest posterior density interval (HPD) 4.52 × 10 − 7–
+9.35 × 10-7s/s/y] [24]. The final BSP plot was generated
+using outputs from TRACER v1.5 and displayed using
+MICROSOFT EXCEL (Microsoft Corporation).
+
+- rm cr
+The DNA region analyzed was a highly variable 721-nt long segment of the mtDNA control region, running from base 15,541 to base 16,261 in relation to the full mitochondrial sequence (accession number NC001941; Hiendleder, Lewalski et al. 1998).
+
+NC001941:cr:15437..16616: 1179
+aatcattatcaacgatacttatcaatatatttccaaaaatataa
+
+NC_015889:15434..
+aatcattatcaatcatacttatcaata
+
+- lv
+o1	O.orientalis_1
+me	ME
+cea	CEA
+ssa	SSA
+afr	AFR
+eur	EUR
+
+- mutation_rate
+human:
+	mito: 10^-7
+	y: 10^-8
+goat:
+	mito: 2.73e−7
+	y: 8.76E-09
+	y_snp: 7.14E-06
+
+- clock
+0.653 myr
+y: mean	7.7036E-9 s/s/y
+mt: mean 2.1e-8 s/s/y
+
+- chain
+leng: 40M
+burnin: 0.05
+
+# kk

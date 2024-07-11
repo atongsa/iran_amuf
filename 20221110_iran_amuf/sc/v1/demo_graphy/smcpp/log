@@ -1,0 +1,20 @@
+# philosophy
+
+# smcpp
+rate: 1.01e-8
+g: 3
+
+# split
+json:
+    split:
+        val[split]*
+
+
+
+
+
+
+
+
+
+# kk

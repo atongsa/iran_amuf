@@ -1,0 +1,37 @@
+# philosophy
+- ai region
+- find the gene
+
+# run
+- get ai region
+LOC114116733
+
+- seq
+>10:40929683-40929788
+AAAATATGGAACGCTTCACGAATTTGCGTGTCATCCTTGCGCAGGGGCCATGCTAATCTT
+CTCTGTATCGTTCCAATTTTAGTATATGTGCTGCCGAAGCGAGCAC
+
+- pcdh9
+The strongest PCAdapt signals corresponded to: PAK1 and the KLHL1/PCDH9 intergenic region, both described previously as being involved in environmental adaptation.
+
+-- ai
+10:41204271-41213804 # ai
+10:41893112-43073231 # pcdh9
+
+-- pixy
+41104271-41313804
+
+- drawf_sheep
+Ouessant: 20kg/48-50cm
+West African Dwarf: 37kg # ram
+Shetlands: 41kg
+Soay: 38kg/
+garole: 15kg/44 cm; https://scialert.net/fulltext/?doi=ajas.2010.170.189
+
+average: 80-120 cm
+
+- geo
+https://www.ncbi.nlm.nih.gov/geo/tools/profileGraph.cgi?ID=GDS2813:1442659_at
+https://www.ncbi.nlm.nih.gov/geo/tools/profileGraph.cgi?ID=GDS3423:219737_s_at
+
+# kk

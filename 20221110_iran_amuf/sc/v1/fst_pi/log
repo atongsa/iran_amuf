@@ -1,0 +1,7 @@
+# run
+
+# sel fa
+seqkit grep -f ../s_p/mt.fst.id mt.hap.fa > mt.fst.fa
+seqkit grep -f ../s_p/ram.fst.id ram.p.min239.fasta > ram.fst.fa
+
+# kk

@@ -1,0 +1,32 @@
+# philosophy
+- writing log
+
+# run
+- chatgpt
+don't change my citation style in square brackets
+correct my grammatical mistake;
+correct words mistake;
+polish my sentence be scientific journal paper style;
+
+- md2word
+
+---
+bibliography: "/mnt/sda1/Documents/proj/read/paper/zotero_cite_lib/at42_lib.yaml"
+#csl: "cell.csl"
+
+zotero:
+  library: # omitted to use your personal library
+  scannable-cite: false # only relevant when you're compiling to scannable-cite .odt
+  client: zotero # defaults to zotero
+  author-in-text: false # when true, enabled fake author-name-only cites by replacing it with the text of the last names of the authors
+  csl-style: Genome Biology and Evolution # pre-fill the style
+---
+
+m_d='gene.md'
+pandoc --lua-filter=/mnt/sda1/Documents/proj/read/paper/zotero_cite_lib/zotero.lua \
+ -s $m_d -o $m_d.odt
+
+- google_doc
+https://docs.google.com/document/d/1BdYC46RcymgubnPK8Ghh7yIRok95GD3m0nc0KuRIvTw/edit?usp=sharing
+
+# kk

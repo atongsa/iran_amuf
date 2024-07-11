@@ -1,0 +1,20 @@
+# philosophy
+- vcf processing
+
+# run
+- filter
+--autosome-num 26 \
+--geno 0.1 \
+--maf 0.05 \
+#--hwe 0.001 \
+
+- prune
+
+- 780
+
+
+
+
+
+
+# kk

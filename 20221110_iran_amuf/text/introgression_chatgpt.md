@@ -1,0 +1,26 @@
+---
+bibliography: "/mnt/sda1/Documents/proj/read/paper/zotero_cite_lib/at42_lib.yaml"
+#csl: "cell.csl"
+
+zotero:
+  library: # omitted to use your personal library
+  scannable-cite: false # only relevant when you're compiling to scannable-cite .odt
+  client: zotero # defaults to zotero
+  author-in-text: false # when true, enabled fake author-name-only cites by replacing it with the text of the last names of the authors
+  csl-style: "Genome Biology and Evolution" # pre-fill the style
+---
+
+# philosophy
+- introgression
+
+# methods
+We performed admixture analysis using sNMF [@frichotFastEfficientEstimation2014] with Ovis orientalis_1/2 and SSA populations. To investigate introgression, we used a combination of D and fdm statistics. Specifically, we calculated D statistics (pattersonAncientAdmixtureHuman2012a) with a four taxon model (((P1,P2),P3),P4) using the Dsuite v0.5r50 (malinskyDsuiteFastStatistics2021a) command Dtrios. Menz sheep served as the reference population (P1), while individual SSA breeds were the target population (P2), O.orientalis_1 or O.orientalis_2 were the donor (P3), and O. canadensis was the outgroup (P4). A P value < 0.05 from a standard block-jackknife procedure was considered evidence of gene flow between P3 and P2.
+
+We also calculated fdm using the Dsuite v0.5r50 (malinskyDsuiteFastStatistics2021a) command Dinvestigate. For each region we investigated, we considered a D > 0 and fdm in the top 95% as an introgressed region. The four overlapping introgression regions were considered the common introgressed regions associated with the hot, wet, and parasitic environment of Southeast Asia (Indonesia and Bangladesh). We calculated the PBS value using PBScan v2020.03.16 [@hamalaGenomicPatternsLocal2019] with the arguments (-win 50 -step 25 -mc 2000). Regions with a top 1% PBS value were considered as local adaptation regions. We overlapped the local adaptation regions with the common introgressed regions, and these regions were considered as adaptive introgressed regions from O.orientalis_2 into Indonesia and Bangladesh sheep (BGE/GAR/GUR/SUM).
+
+We downloaded the sheep QTL bed file version OAR_rambo1 from sheepQTLdb [@huBringingAnimalQTLdb2022] and overlapped the QTL with the AI region using bedtools v2.30.0 [@quinlanBEDToolsFlexibleSuite2010].
+
+# results
+We employed the ABBA model (((P1,P2),P3),P4) to assess introgression between P3 and P2, using Menz sheep (MEN) from Africa as P1, which was confirmed to have no introgression with Ovis orientalis after domestication [@caoHistoricalIntrogressionWild2021; @lvWholeGenomeResequencingWorldwide2022b]. We selected Ovis canadensis as the outgroup P4, which inhabits the Americas and cannot naturally hybridize with South and Southeast Asian (SSA) sheep breeds. The two Iranian mouflon populations, Ovis orientalis_1 or Ovis orientalis_2, served as P3, and 18 SSA breeds were used as P2 to investigate introgression. We calculated all 36 trios' Patterson's D-statistic and f4-ratio, and determined introgression based on the following criteria: D > 0, P-value < 0.05, and f4-ratio > 0. Only four trios satisfied these criteria (Fig. 3A, Supplementary Table S4), leading us to conclude that Garut, Garole, Bangladeshi, and Sumatra sheep breeds may have undergone introgression with Ovis orientalis_2. Given that these four breeds are all found near the Indian Ocean, we refer to them as SSA sea breeds. We used the four SSA sea trios that were considered to be under introgression to calculate fdm with a 50-SNP window and 25-SNP step across the sheep genome. We identified regions with top 5% fdm and D > 0 as introgression regions. We overlapped the four introgression regions identified by the top 5% fdm and obtained a common introgression region spanning 6,384,279 bp (Fig. 3B, Supplementary Tables S5 and S6). We then calculated the PBS value of the four SSA sea breeds with MEN sheep and Ovis orientalis_2 to identify regions under positive selection. We considered the top 1% of PBS regions as under positive selection (Fig. 3C, Supplementary Table S7). We overlapped the PBS-positive selected regions with the common introgression region and named the resulting 21,033 bp region the AI (adaptive introgression) region (Supplementary Table S8), which may have been introgressed from Ovis orientalis_2 and undergone the same selection direction to facilitate local adaptation to the hot, humid, and parasite-rich environments near the Indian Ocean. We overlapped the AI region with sheep QTL (Supplementary Table S9) and found that it overlapped with Body_weight, Carcass_fat, and fat_weight QTLs, which are associated with the dwarf phenotype of Garole sheep [@sahanaGaroleProlificSheep2001; @banerjeeProductivityGeneticPotential2010] and small body size of Bangladeshi sheep [@banerjeeProductivityGeneticPotential2010]. Additionally, the Nematodirus_FEC QTL is associated with the Sumatra sheep's susceptibility to nematode parasitism phenotype [@febretrisianaSheepGastrointestinalHelminth2021] (Fig. 3C). The QTLs overlapping the AI region we identified are associated with the phenotypes of these four SSA sea breeds, indicating that our results are highly reliable.
+
+# kk
